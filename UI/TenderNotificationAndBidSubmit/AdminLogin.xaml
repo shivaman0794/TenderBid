@@ -1,0 +1,34 @@
+﻿<Window x:Class="TenderNotificationAndBidSubmit.AdminLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TenderNotificationAndBidSubmit"
+        mc:Ignorable="d"
+        Title="AdminLogin" Height="350" Width="400">
+    <Grid Background="Honeydew">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Login Details" Grid.Row="0" Grid.Column="0" Margin="20" FontFamily="18" FontWeight="Bold"/>
+        <Label Content="UserName :" Grid.Row="1" Grid.Column="0" Margin="55,15,5,15"/>
+        <Label Content="Password :" Grid.Row="2" Grid.Column="0" Margin="55,15,5,15"/>
+       
+
+        <TextBox x:Name="userNametxt" Grid.Row="1" Grid.Column="1" Margin="5,15,35,15" VerticalContentAlignment="Center"/>
+        <PasswordBox x:Name="passwordtxt" Grid.Row="2" Grid.Column="1" Margin="5,15,35,15" VerticalContentAlignment="Center"/>
+        
+        <StackPanel Orientation="Horizontal" Grid.Row="3" Grid.ColumnSpan="2" >
+            <Button Content="Login" Margin="25,15,5,15"  Grid.Row="3" Grid.ColumnSpan="1" Width="150" Click="Button_Click" IsDefault="True" IsEnabled="{Binding ElementName=userNametxt, Path=Text.Length}"/>
+            <Button Content="Cancel" Grid.Row="3" Grid.Column="1"  Margin="35,15,15,15" Width="150" Click="Button_Click_1"/>
+        </StackPanel>
+    </Grid>
+</Window>

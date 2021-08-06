@@ -1,0 +1,1008 @@
+﻿<Window x:Class="TenderNotificationAndBidSubmit.EvaluationProcess"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TenderNotificationAndBidSubmit"
+        mc:Ignorable="d"
+        Title="Smart Bids : EvaluationProcess" Height="550" Width="1200" Background="LemonChiffon">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="260"/>
+            <ColumnDefinition Width="260"/>
+            <ColumnDefinition Width="260"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Evaluation Criteria Details :" Grid.Row="0" Grid.Column="0" FontFamily="18" FontWeight="Bold" Margin="1"/>
+
+        <ListView Grid.Row="1" Grid.RowSpan="1" Grid.Column="0" BorderBrush="Gray" Width="auto" Height="auto" >
+            <ListViewItem BorderBrush="Gray">
+                    <StackPanel Orientation="Horizontal">                   
+                    <TextBlock Text="Relevant Experience" Width="180" Margin="10,0,0,0" ></TextBlock>
+                    <Separator Height="20" Width="1" Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
+                    <TextBlock Text="10%" Margin="10,0,20,0"></TextBlock>                  
+                </StackPanel>
+            </ListViewItem>
+            <ListViewItem BorderBrush="Gray">
+                    <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Financial Capability"  Width="180" Margin="10,0,0,0" ></TextBlock>
+                    <Separator Height="20" Width="1" Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
+                    <TextBlock Text="10%" Margin="10,0,20,0"></TextBlock>
+                </StackPanel>
+            </ListViewItem>
+            <ListViewItem BorderBrush="Gray">
+                    <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Appreciations for previous task" Width="180" Margin="10,0,0,0" ></TextBlock>
+                    <Separator Height="20" Width="1" Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
+                    <TextBlock Text="10%" Margin="10,0,20,0"></TextBlock>
+                </StackPanel>
+            </ListViewItem>
+            <ListViewItem BorderBrush="Gray">
+                    <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Past Performance" Width="180" Margin="10,0,0,0" ></TextBlock>
+                    <Separator Height="20" Width="1" Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
+                    <TextBlock Text="10%" Margin="10,0,20,0"></TextBlock>
+                </StackPanel>
+            </ListViewItem>
+            <ListViewItem BorderBrush="Gray">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Methodology" Width="180" Margin="10,0,0,0" ></TextBlock>
+                    <Separator Height="20" Width="1" Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
+                    <TextBlock Text="10%" Margin="10,0,20,0"></TextBlock>
+                </StackPanel>
+            </ListViewItem>
+            <ListViewItem BorderBrush="Gray">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Operation Data" Width="180" Margin="10,0,0,0" ></TextBlock>
+                    <Separator Height="20" Width="1" Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
+                    <TextBlock Text="10%" Margin="10,0,20,0"></TextBlock>
+                </StackPanel>
+            </ListViewItem>
+            <ListViewItem BorderBrush="Gray">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Resource" Width="180" Margin="10,0,0,0" ></TextBlock>
+                    <Separator Height="20" Width="1" Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
+                    <TextBlock Text="10%" Margin="10,0,20,0"></TextBlock>
+                </StackPanel>
+            </ListViewItem>
+            <ListViewItem BorderBrush="Gray">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Scope of work" Width="180" Margin="10,0,0,0" ></TextBlock>
+                    <Separator Height="20" Width="1" Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
+                    <TextBlock Text="15%" Margin="10,0,20,0"></TextBlock>
+                </StackPanel>
+            </ListViewItem>
+            <ListViewItem BorderBrush="Gray">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Price" Width="180" Margin="10,0,0,0" ></TextBlock>
+                    <Separator Height="20" Width="1" Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
+                    <TextBlock Text="15%" Margin="10,0,20,0"></TextBlock>
+                </StackPanel>
+            </ListViewItem>
+        </ListView>
+
+        <Grid Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="3" Grid.RowSpan="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="260"/>
+                <ColumnDefinition Width="260"/>
+                <ColumnDefinition Width="260"/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="0" Margin="5,5,5,0">
+                <Border BorderBrush="Gray" BorderThickness="1">
+                    <StackPanel>
+            <TextBlock  Text="Bidder 1" FontFamily="18" FontWeight="Bold" />
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Evaluation 1" Margin="5"/>
+                    <Separator Height="20" Width="1" Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
+                    <TextBlock Text="Evaluation 2" Margin="5"/>
+                    <Separator Height="20" Width="1" Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
+                    <TextBlock Text="Avg. Evaluation" Margin="5"/>
+                </StackPanel>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="1" Margin="5,5,5,0">
+                <Border BorderBrush="Gray" BorderThickness="1">
+                    <StackPanel>
+                        <TextBlock  Text="Bidder 2" FontFamily="18" FontWeight="Bold" />
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Evaluation 1" Margin="5"/>
+                            <Separator Height="20" Width="1" Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
+                            <TextBlock Text="Evaluation 2" Margin="5"/>
+                            <Separator Height="20" Width="1" Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
+                            <TextBlock Text="Avg. Evaluation" Margin="5"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="2" Margin="5,5,5,0">
+                <Border BorderBrush="Gray" BorderThickness="1">
+                    <StackPanel>
+                        <TextBlock  Text="Bidder 3" FontFamily="18" FontWeight="Bold" />
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Evaluation 1" Margin="5"/>
+                            <Separator Height="20" Width="1" Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
+                            <TextBlock Text="Evaluation 2" Margin="5"/>
+                            <Separator Height="20" Width="1" Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
+                            <TextBlock Text="Avg. Evaluation" Margin="5"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+            
+        </Grid>
+        
+        <Grid Grid.Row="1" Grid.Column="2">
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal" Margin="5,0,10,0">
+                    <Border BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel Orientation="Horizontal">
+                            <ComboBox Margin="5" Width="70" SelectionChanged="ComboBox_SelectionChanged" >
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <ComboBox Margin="5" Width="70">
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <TextBox x:Name="b1evalu1" Margin="5" Width="70"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5,0,10,0">
+                    <Border BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel Orientation="Horizontal">
+                            <ComboBox Margin="5" Width="70" SelectionChanged="ComboBox_SelectionChanged" >
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <ComboBox Margin="5" Width="70">
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <TextBox x:Name="b1evalu2" Margin="5" Width="70"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5,0,10,0">
+                    <Border BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel Orientation="Horizontal">
+                            <ComboBox Margin="5" Width="70" SelectionChanged="ComboBox_SelectionChanged" >
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <ComboBox Margin="5" Width="70">
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <TextBox x:Name="b1evalu3" Margin="5" Width="70"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"  Margin="5,0,10,0">
+                    <Border BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel Orientation="Horizontal">
+                            <ComboBox Margin="5" Width="70" SelectionChanged="ComboBox_SelectionChanged" >
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <ComboBox Margin="5" Width="70">
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <TextBox x:Name="b1evalu4" Margin="5" Width="70"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"  Margin="5,0,10,0">
+                    <Border BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel Orientation="Horizontal">
+                            <ComboBox Margin="5" Width="70" SelectionChanged="ComboBox_SelectionChanged" >
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <ComboBox Margin="5" Width="70">
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <TextBox x:Name="b1evalu5" Margin="5" Width="70"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"  Margin="5,0,10,0">
+                    <Border BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel Orientation="Horizontal">
+                            <ComboBox Margin="5" Width="70" SelectionChanged="ComboBox_SelectionChanged" >
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <ComboBox Margin="5" Width="70">
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <TextBox x:Name="b1evalu6" Margin="5" Width="70"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5,0,10,0">
+                    <Border BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel Orientation="Horizontal">
+                            <ComboBox Margin="5" Width="70" SelectionChanged="ComboBox_SelectionChanged" >
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <ComboBox Margin="5" Width="70">
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <TextBox x:Name="b1evalu7" Margin="5" Width="70"/>
+                        </StackPanel>
+                        </Border>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5,0,10,0">
+                    <Border BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel Orientation="Horizontal">
+                            <ComboBox Margin="5" Width="70" SelectionChanged="ComboBox_SelectionChanged" >
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <ComboBox Margin="5" Width="70">
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <TextBox x:Name="b1evalu8" Margin="5" Width="70"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5,0,10,0">
+                    <Border BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel Orientation="Horizontal">
+                            <ComboBox Margin="5" Width="70" SelectionChanged="ComboBox_SelectionChanged" >
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <ComboBox Margin="5" Width="70">
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <TextBox x:Name="b1evalu9" Margin="5" Width="70"/>
+                        </StackPanel>
+                    </Border>                   
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="3">
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal" Margin="5,0,10,0">
+                    <Border BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel Orientation="Horizontal">
+                            <ComboBox Margin="5" Width="70" SelectionChanged="ComboBox_SelectionChanged" >
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <ComboBox Margin="5" Width="70">
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <TextBox x:Name="b2evalu1" Margin="5" Width="70"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5,0,10,0">
+                    <Border BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel Orientation="Horizontal">
+                            <ComboBox Margin="5" Width="70" SelectionChanged="ComboBox_SelectionChanged" >
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <ComboBox Margin="5" Width="70">
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <TextBox x:Name="b2evalu2"  Margin="5" Width="70"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5,0,10,0">
+                    <Border BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel Orientation="Horizontal">
+                            <ComboBox Margin="5" Width="70" SelectionChanged="ComboBox_SelectionChanged" >
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <ComboBox Margin="5" Width="70">
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <TextBox x:Name="b2evalu3"  Margin="5" Width="70"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"  Margin="5,0,10,0">
+                    <Border BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel Orientation="Horizontal">
+                            <ComboBox Margin="5" Width="70" SelectionChanged="ComboBox_SelectionChanged" >
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <ComboBox Margin="5" Width="70">
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <TextBox  x:Name="b2evalu4" Margin="5" Width="70"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"  Margin="5,0,10,0">
+                    <Border BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel Orientation="Horizontal">
+                            <ComboBox Margin="5" Width="70" SelectionChanged="ComboBox_SelectionChanged" >
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <ComboBox Margin="5" Width="70">
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <TextBox x:Name="b2evalu5"  Margin="5" Width="70"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"  Margin="5,0,10,0">
+                    <Border BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel Orientation="Horizontal">
+                            <ComboBox Margin="5" Width="70" SelectionChanged="ComboBox_SelectionChanged" >
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <ComboBox Margin="5" Width="70">
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <TextBox x:Name="b2evalu6"  Margin="5" Width="70"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5,0,10,0">
+                    <Border BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel Orientation="Horizontal">
+                            <ComboBox Margin="5" Width="70" SelectionChanged="ComboBox_SelectionChanged" >
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <ComboBox Margin="5" Width="70">
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <TextBox x:Name="b2evalu7"  Margin="5" Width="70"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5,0,10,0">
+                    <Border BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel Orientation="Horizontal">
+                            <ComboBox Margin="5" Width="70" SelectionChanged="ComboBox_SelectionChanged" >
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <ComboBox Margin="5" Width="70">
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <TextBox x:Name="b2evalu8"  Margin="5" Width="70"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5,0,10,0">
+                    <Border BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel Orientation="Horizontal">
+                            <ComboBox Margin="5" Width="70" SelectionChanged="ComboBox_SelectionChanged" >
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <ComboBox Margin="5" Width="70">
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <TextBox x:Name="b2evalu9"  Margin="5" Width="70"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="4">
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal" Margin="5,0,10,0">
+                    <Border BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel Orientation="Horizontal">
+                            <ComboBox Margin="5" Width="70" SelectionChanged="ComboBox_SelectionChanged" >
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <ComboBox Margin="5" Width="70">
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <TextBox x:Name="b3evalu1"  Margin="5" Width="70"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5,0,10,0">
+                    <Border BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel Orientation="Horizontal">
+                            <ComboBox Margin="5" Width="70" SelectionChanged="ComboBox_SelectionChanged" >
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <ComboBox Margin="5" Width="70">
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <TextBox x:Name="b3evalu2"   Margin="5" Width="70"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5,0,10,0">
+                    <Border BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel Orientation="Horizontal">
+                            <ComboBox Margin="5" Width="70" SelectionChanged="ComboBox_SelectionChanged" >
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <ComboBox Margin="5" Width="70">
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <TextBox x:Name="b3evalu3"   Margin="5" Width="70"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"  Margin="5,0,10,0">
+                    <Border BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel Orientation="Horizontal">
+                            <ComboBox Margin="5" Width="70" SelectionChanged="ComboBox_SelectionChanged" >
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <ComboBox Margin="5" Width="70">
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <TextBox x:Name="b3evalu4"   Margin="5" Width="70"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"  Margin="5,0,10,0">
+                    <Border BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel Orientation="Horizontal">
+                            <ComboBox Margin="5" Width="70" SelectionChanged="ComboBox_SelectionChanged" >
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <ComboBox Margin="5" Width="70">
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <TextBox x:Name="b3evalu5"   Margin="5" Width="70"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal"  Margin="5,0,10,0">
+                    <Border BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel Orientation="Horizontal">
+                            <ComboBox Margin="5" Width="70" SelectionChanged="ComboBox_SelectionChanged" >
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <ComboBox Margin="5" Width="70">
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <TextBox x:Name="b3evalu6"   Margin="5" Width="70"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5,0,10,0">
+                    <Border BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel Orientation="Horizontal">
+                            <ComboBox Margin="5" Width="70" SelectionChanged="ComboBox_SelectionChanged" >
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <ComboBox Margin="5" Width="70">
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <TextBox x:Name="b3evalu7"   Margin="5" Width="70"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5,0,10,0">
+                    <Border BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel Orientation="Horizontal">
+                            <ComboBox Margin="5" Width="70" SelectionChanged="ComboBox_SelectionChanged" >
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <ComboBox Margin="5" Width="70">
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <TextBox x:Name="b3evalu8"   Margin="5" Width="70"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5,0,10,0">
+                    <Border BorderBrush="Gray" BorderThickness="1">
+                        <StackPanel Orientation="Horizontal">
+                            <ComboBox Margin="5" Width="70" SelectionChanged="ComboBox_SelectionChanged" >
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <ComboBox Margin="5" Width="70">
+                                <ComboBoxItem Content="1"/>
+                                <ComboBoxItem Content="2"/>
+                                <ComboBoxItem Content="3"/>
+                                <ComboBoxItem Content="4"/>
+                                <ComboBoxItem Content="5"/>
+                                <ComboBoxItem Content="6"/>
+                                <ComboBoxItem Content="7"/>
+                                <ComboBoxItem Content="8"/>
+                                <ComboBoxItem Content="9"/>
+                                <ComboBoxItem Content="10"/>
+                            </ComboBox>
+                            <TextBox x:Name="b3evalu9"   Margin="5" Width="70"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+
+        <Button Content="Calculate points" Grid.Row="2" Width="120"  Margin="0,10,0,0" Click="Button_Click"/>
+
+        <TextBox x:Name="Bidder1Avg" Grid.Row="2" Grid.Column="2" Width="50" HorizontalAlignment="Right" Margin="0,5,20,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Visibility="Collapsed"/>
+        <TextBox x:Name="Bidder2Avg" Grid.Row="2" Grid.Column="3" Width="50" HorizontalAlignment="Right" Margin="0,5,20,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Visibility="Collapsed"/>
+        <TextBox x:Name="Bidder3Avg" Grid.Row="2" Grid.Column="4" Width="50" HorizontalAlignment="Right" Margin="0,5,20,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Visibility="Collapsed"/>
+
+        <Label x:Name="ResultMessage" Content="Bidder2 is the winner for this tender !" Margin="5,0,0,0" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" FontFamily="24" FontSize="20" FontWeight="Bold" Foreground="Green" Visibility="Collapsed"/>
+    </Grid>
+</Window>

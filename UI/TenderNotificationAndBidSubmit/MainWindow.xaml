@@ -1,0 +1,40 @@
+﻿<Window x:Class="TenderNotificationAndBidSubmit.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TenderNotificationAndBidSubmit"
+        mc:Ignorable="d"
+        Title="Smart Bids" Height="450" Width="800" Background="Beige">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="8.5*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Row="0">
+        <Label Content="Hexagon Company Ltd" Margin="20, 10,10,10" FontSize="20" FontWeight="ExtraBold"/>
+
+        <StackPanel Orientation="Vertical"  Margin="350, 10,10,0">
+         <Label Content="Contact us at : 040 322320" FontSize="12"/>
+         <Button Content="Login as Admin" Margin="5, 10,10,10" FontSize="12" Click="Button_Click_1" Name="login" />
+         </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Grid.Row="1">
+            <Label Content="Tenders List" Margin="20,5,5,0" FontSize="15" FontWeight="Bold" />
+            <DataGrid HorizontalAlignment="Left" Margin="20" Name="dataGrid1" VerticalAlignment="Top" 
+                  Background="LightGray" RowBackground="LightYellow" AlternatingRowBackground="LightBlue" 
+                  BorderBrush="Gray" BorderThickness="5" IsReadOnly="True" Width="700" Height="auto">
+            
+            </DataGrid>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="10,0,0,0" Name="tenderDetails">
+            <Label Margin="15,8,15,5" Content="Tender ID"></Label>
+            <TextBox x:Name="tenderID" Margin="15,5,15,5" Width="80" TextAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+            <Button Content="Get Details" Width="80" Margin="15,5,15,5" Click="Button_Click" IsEnabled="{Binding ElementName=tenderID, Path=Text.Length}" ></Button>
+            <Button Content="Initiate the Tender Evaluation Process" Width="200" Margin="15,5,15,5" Name="SubmitTenderEvaluation"
+                    IsEnabled="{Binding ElementName=tenderID, Path=Text.Length}" Visibility="Collapsed" Click="SubmitTenderEvaluation_Click" />            
+        </StackPanel>
+    </Grid>
+</Window>

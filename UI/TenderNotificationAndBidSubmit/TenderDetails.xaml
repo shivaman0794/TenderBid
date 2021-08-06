@@ -1,0 +1,46 @@
+﻿<Window x:Class="TenderNotificationAndBidSubmit.TenderDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TenderNotificationAndBidSubmit"
+        mc:Ignorable="d"
+        Title="Smart Bids : Tender Details" Height="450" Width="800">
+    <Grid Background="BlanchedAlmond">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="View Tender Details :" Grid.Row="0" Grid.Column="0" FontFamily="18" FontWeight="Bold" Margin="10"/>
+        <Label Content="Event ID :" Grid.Row="1" Grid.Column="0" Margin="10"/>
+        <Label Content="Tender Description :" Grid.Row="2" Grid.Column="0" Margin="10"/>
+        <Label Content="Delivery Date :" Grid.Row="3" Grid.Column="0" Margin="10"/>
+        <Label Content="Type of contract :" Grid.Row="4" Grid.Column="0" Margin="10"/>
+        <Label Content="Product :" Grid.Row="5" Grid.Column="0" Margin="10"/>
+        <Label Content="Delivery/Location At :" Grid.Row="6" Grid.Column="0" Margin="10" />
+        <Label Content="Base currency :" Grid.Row="7" Grid.Column="0" Margin="10"/>
+
+        <TextBox x:Name="EventIDtxt" IsReadOnly="True" Grid.Row="1" Grid.Column="1" Margin="10"/>
+        <TextBox x:Name="TenderTitletxt" IsReadOnly="True" Grid.Row="2" Grid.Column="1" Margin="10"/>
+        <TextBox x:Name="DeliveryDateIDtxt" IsReadOnly="True" Grid.Row="3" Grid.Column="1" Margin="10"/>
+        <TextBox x:Name="TypeOfContracttxt" IsReadOnly="True" Grid.Row="4" Grid.Column="1" Margin="10"/>
+        <TextBox x:Name="Producttxt"  IsReadOnly="True" Grid.Row="5" Grid.Column="1" Margin="10"/>
+        <TextBox x:Name="DeliveryAttxt" IsReadOnly="True" Grid.Row="6" Grid.Column="1" Margin="10"/>
+        <TextBox x:Name="BaseCurrencytxt" IsReadOnly="True" Grid.Row="7" Grid.Column="1" Margin="10"/>
+
+        <Button Content="Bid For this Tender" Grid.Row="8" Grid.Column="1"
+                  Margin="10" Width="150" Click="Button_Click" />
+    </Grid>
+</Window>
